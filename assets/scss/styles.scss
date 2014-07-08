@@ -1,0 +1,12 @@
+@import "bourbon";
+@import "neat";
+
+@import "variables";
+@import "inc/typography";
+@import "inc/header";
+@import "inc/body";
+
+body {
+  margin: 0;
+  padding: 0;
+}
