@@ -1,114 +1,12 @@
-section {
-  @include outer-container;
-}
-
-section > div {
-  @include pad();
-  @include clearfix;
-}
-
-article {
-  @include span-columns(12);
-}
-
-#mast {
-  background-color:rgba(0,0,0,0.5);
-}
-
-#mast {
-  text-align: center;
-}
-
-#mast img {
-  max-width: 960px;
-  max-height: 289px;
-  width: 100%;
-}
-
-.buy_now {
-  background-color:rgba(255,242,0,0.5);
-  padding: 20px 0;
-}
-
-.buy_now a {
-  border: 2px solid $copy-color;
-  border-radius: 3px;
-  color: $copy-color;
-  font-size: 2em;
-  text-decoration: none;
-  padding: 12px 40px;
-
-  @include media($tablet) {
-    position: relative;
-    width: 400px;
-    margin-left: 50%;
-    left: -200px;
-
-  }
-
-  @include media($mobile) {
-    display: block;
-    text-align: center;
-  }
-}
-
-.buy_now a:hover {
-  background: $copy-color;
-  color: $header-color;
-}
-
-#marketing {
-  background-color:rgba(0,174,239,0.5);
-}
-
-#marketing article {
-  @include span-columns(12);
-  text-align: center;
-  padding: 12px 0;
-
-  @include media($tablet) {
-    @include span-columns(2);
-  }
-
-}
-
-#marketing article p {
-  padding: 0 12px;
-}
-
-#marketing article:hover {
-  background-color:rgba(0,0,0,0.5);
-}
-
-#marketing img {
-  width: 50%;
-}
-
-#social {
-  background-color:rgba(236,0,140,0.5);
-  padding: 20px 0;
-}
-
-#social ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
- #social li {
-   font-size: 1.8em;
-   padding: 40px 0;
-   text-align: center;
-   @include span-columns(12);
-
-   @include media($tablet) {
-     width: 50%;
-     margin: 0;
-     font-size: 2.5em;
-   }
- }
-
-#social a {
-  color: $copy-color;
-  text-decoration: none;
-}
+//section {
+//  @include outer-container;
+//}
+//
+//section > div {
+//  @include pad();
+//  @include clearfix;
+//}
+//
+//article {
+//  @include span-columns(12);
+//}

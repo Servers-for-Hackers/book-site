@@ -3,10 +3,196 @@
 
 @import "variables";
 @import "inc/typography";
-@import "inc/header";
-@import "inc/body";
 
 body {
+  background: $sfh-white;
   margin: 0;
   padding: 0;
+  padding-bottom: 70px;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid $sfh-black;
+}
+
+.dark {
+  background: $sfh-black;
+}
+
+.breadth {
+  @include outer-container;
+  max-width: 960px;
+}
+
+.breadth nav,
+.breadth article {
+  @include span-columns(12);
+  padding: 0;
+  text-align: center;
+}
+
+#icon img {
+  margin: em(40) 0;
+  height: auto;
+
+  @include media($tablet) {
+    margin: em(60) 0;
+  }
+
+  @include media($desktop) {
+    margin: em(80) 0;
+  }
+}
+
+#icon img {
+  width: 80%;
+  max-width: 427px;
+}
+
+#content p {
+  @include pad();
+}
+
+.grp {
+  @include row();
+}
+
+.breadth .block {
+  @include pad();
+  @include span-columns(12);
+
+  @include media($tablet) {
+    @include span-columns(4 of 12);
+    @include omega(3n);
+  }
+
+  @include media($desktop) {
+    @include span-columns(4);
+    @include omega(3n);
+  }
+}
+
+#aboutme img {
+  float: left;
+  margin: 30px;
+}
+
+.book {
+  background: $sfh-orange;
+}
+
+.bookplus {
+  background: $sfh-red;
+}
+
+.button {
+  border-radius: 3px;
+  display: block;
+  width: 70%;
+  margin: 30px auto 10px auto;
+  padding: 14px 0;
+
+  @include media($tablet) {
+    margin: 20px auto 35px auto;
+  }
+}
+
+.button.submit {
+  font-weight: 300;
+  width: 190px;
+  border: 0;
+  cursor: pointer;
+}
+
+.inside-price {
+  @include media($tablet) {
+    display:none;
+  }
+}
+
+#price-header {
+  @include span-columns(12);
+
+  header {
+    padding: 1px 0;
+    margin-bottom: 20px;
+  }
+
+  @include media($tablet) {
+    header {
+      float: left;
+      width: 50%;
+      padding: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  @include media($desktop) {
+    header {
+      width: 37.5%;
+      margin: 0 38px;
+    }
+
+    header.left {
+      margin-left: 80px;
+    }
+
+    header.right {
+      margin-right: 80px;
+    }
+  }
+}
+
+#price {
+  display: none;
+
+  @include media($tablet) {
+    display: block;
+
+    article {
+      float: left;
+      width: 50%;
+      margin: 0;
+    }
+  }
+
+  @include media($desktop) {
+    article {
+      width: 37.5%;
+      margin: 0 38px;
+    }
+
+    article.left {
+      margin-left: 80px;
+    }
+
+    article.right {
+      margin-right: 80px;
+    }
+  }
+}
+
+form {
+  margin: 20px 0;
+}
+
+form ul,
+form ol,{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input.txt {
+  border: 1px solid $sfh-black;
+  border-radius: 8px;
+  padding: 0 10px;
+  margin: 0 0 20px 0;
+  height: 60px;
+  line-height: 60px;
+  width: 70%;
+  font-size: 1.6em;
+  color: $sfh-black;
+  outline: none;
 }

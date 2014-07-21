@@ -1,46 +1,166 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
-@font-face{
-  font-family:'EntypoSocialRegular';
-  src:url("../font/entypo-social.eot");
-  src:url("../font/entypo-social.eot?#iefix") format("embedded-opentype"),
-      url("../font/entypo-social.woff") format("woff"),
-      url("../font/entypo-social.ttf") format("truetype"),
-      url("../font/entypo-social.svg#EntypoRegular") format("svg");font-weight:normal;
-  font-style:normal
-}
-
-.entypo-social{
-  font-family:'EntypoSocialRegular';
-  font-size: 4em;
-  font-weight:normal;
-  line-height:0
-}
-i.entypo,
-i.entypo-social{
-  min-width:0.625em;
-  height:inherit;
-  font-style:normal;
-  display:inline-block;
-  position:static;
-  text-align:center;
-  vertical-align:middle
-}
-.entypo.tag:before{
-  content:'\E70C'
-}
-.entypo-social.twitter:before{
-  content:'\F309'
-}
+//@font-face{
+//  font-family:'EntypoSocialRegular';
+//  src:url("../font/entypo-social.eot");
+//  src:url("../font/entypo-social.eot?#iefix") format("embedded-opentype"),
+//      url("../font/entypo-social.woff") format("woff"),
+//      url("../font/entypo-social.ttf") format("truetype"),
+//      url("../font/entypo-social.svg#EntypoRegular") format("svg");font-weight:normal;
+//  font-style:normal
+//}
+//
+//.entypo-social{
+//  font-family:'EntypoSocialRegular';
+//  font-size: 4em;
+//  font-weight:normal;
+//  line-height:0
+//}
+//i.entypo,
+//i.entypo-social{
+//  min-width:0.625em;
+//  height:inherit;
+//  font-style:normal;
+//  display:inline-block;
+//  position:static;
+//  text-align:center;
+//  vertical-align:middle
+//}
+//.entypo.tag:before{
+//  content:'\E70C'
+//}
+//.entypo-social.twitter:before{
+//  content:'\F309'
+//}
 
 body {
   font-family: 'Open Sans', helvetica, arial, sans-serif;
-  font-size: 20px;
-  color: $copy-color;
-  font-weight: 300;
+  font-size: 16px;
+  color: $sfh-black;
+  font-weight: 400;
+}
+
+p {
+  font-size: em(18);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $header-color;
+  color: $sfh-black;
   font-weight: 300;
+}
+
+h3 {
+  font-size: em(30);
+
+  @include media($desktop) {
+    font-size: em(27);
+  }
+}
+
+.dark,
+.dark h1, .dark h2, .dark h3 {
+  color: $sfh-white;
+}
+
+a, a:visited {
+  color: $sfh-red;
+  text-decoration: none;
+}
+
+header h1,
+header h2 {
+  color: $sfh-white;
+  font-weight: 700;
+  font-size: em(36);
+  margin: 0;
+  position: relative;
+  bottom: -12px;
+
+  @include media($tablet) {
+    font-size: em(50);
+    letter-spacing: em(1);
+    bottom: -15px;
+  }
+
+  @include media($desktop) {
+    font-size: em(80);
+    letter-spacing: em(1);
+    bottom: -24px;
+  }
+}
+
+#tagline h2 {
+  font-weight: 300;
+  font-size: em(30);
+  margin: 20px 0;
+  letter-spacing: em(1);
+
+  @include media($tablet) {
+    font-size: em(45);
+    margin: 25px 0;
+  }
+
+  @include media($desktop) {
+    font-size: em(60);
+    margin: 30px 0;
+  }
+}
+
+.basic h2 {
+  font-weight: 800;
+  font-size: em(36);
+  margin: 60px 0 20px 0;
+}
+
+#aboutme p {
+  font-weight: 300;
+}
+
+.blocks,
+.breadth .block {
+  text-align: left;
+}
+
+.breadth .block h3 {
+  text-align: center;
+
+  @include media($desktop) {
+    text-align: left;
+  }
+}
+
+#icon p {
+  font-size: em(20);
+  margin: 10px 0 0 0;
+
+  @include media($tablet) {
+    font-size: em(30);
+  }
+}
+
+#aboutme .breadth p {
+  text-align: left;
+  margin: 1em;
+}
+
+#price-header,
+#price-header h3 {
+  color: $sfh-black;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.button {
+  color: $sfh-black;
+  font-size: em(30);
+}
+
+.button:hover {
+  background: $sfh-black;
+  color: $sfh-white;
+}
+
+.inside-price .button:hover {
+  background: $sfh-white;
+  color: $sfh-black;
 }

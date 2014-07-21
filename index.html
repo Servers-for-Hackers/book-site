@@ -10,86 +10,150 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <header>
-        <div>
+    <header class="dark">
+        <div class="breadth">
             <nav>
-                <h1>Servers for Hackers <img src="/img/logo_sm.png" alt="Servers for Hackers" /></h1>
+                <h1>Servers for Hackers</h1>
             </nav>
         </div>
     </header>
 
-    <video autoplay loop poster="" id="bgvid">
-        <source src="/vid/keyboard.webm" type="video/webm">
-        <source src="/vid/keyboard.mp4" type="video/mp4">
-    </video>
+    <section id="icon">
+        <div class="breadth">
+            <article>
+                <p>( the eBook )</p>
+                <img src="/img/icon.png" alt="Servers for Hackers" width="427" height="398" />
+            </article>
+        </div>
+    </section>
 
+    <section class="dark" id="tagline">
+        <div class="breadth">
+            <article>
+                <h2>Server Admin for Programmers</h2>
+            </article>
+        </div>
+    </section>
 
+    <section class="basic" id="content">
+        <div class="breadth">
+            <article>
+                <h2>Don't catch Accidental Sysadmin Syndrome™</h2>
+                <p>Application development is getting more complex, and we developers need to know how to setup and maintain the servers which run our applications. Don’t get stuck at 3am with a broken server, or in the middle of your work day fighting configuration. Learn how to administer your servers!</p>
+            </article>
+        </div>
+    </section>
 
-    <div id="mast">
-        <section>
-            <div>
-                <article>
-                    <h1><img src="/img/logo_words_retina.png" /></h1>
+    <section id="blocks">
+        <div class="breadth">
+            <div class="grp">
+                <article class="block">
+                    <h3>Run Web Apps</h3>
+                    <p>Learn how to configure your server for <strong>multi-tenancy</strong> applications and <strong>setting up SSL</strong> certificates.</p>
+                    <p>Learn about Apache and Nginx’s <strong>processing/threading models</strong> to best take advantage of them!</p>
+                </article>
+                <article class="block">
+                    <h3>Manage Web Servers</h3>
+                    <p>Learn both basics and advanced configuration of Apache and Nginx to <strong>serve your sites</strong>, including setup for dynamic applications.</p>
+                </article>
+                <article class="block">
+                    <h3>Multi-Server Setup</h3>
+                    <p>Learn the considerations made when using a <strong>load balancer</strong>, and then learn how to use <strong>Nginx</strong> and <strong>HAProxy</strong> load balancers. </p>
+                    <p>Learn how to setup <strong>MySQL Replication</strong> and balance connections between the databases!</p>
                 </article>
             </div>
-        </section>
-    </div>
-
-    <div class="buy_now">
-        <section>
-            <div>
-                <article>
-                    <a href="#">Buy Now</a>
+            <div class="grp">
+                <article class="block">
+                    <h3>Latest Technologies</h3>
+                    <p>Learn how to install and manage the latest technologies, including setting up <strong>queues/workers</strong>, <strong>monitoring processing</strong> so they don’t fail, handling server and applications <strong>logging</strong> and more!</p>
+                </article>
+                <article class="block">
+                    <h3>Setup and Security</h3>
+                    <p>Learn how to setup each server with needed <strong>software and security configuration</strong> to keep your applications and their data safe. </p>
+                    <p>This includes preventing unauthorized access, managing permissions and users, learning how to use the <strong>iptables firewall</strong>, configuring SSH, enabling SSL certificates and more!</p>
+                </article>
+                <article class="block">
+                    <h3>Case Studies</h3>
+                    <p>Read the case studies to learn from specific <strong>examples</strong> from real-world usage.</p>
+                    <p>These includes examples of <strong>load balancing</strong>, web server configuration, <strong>caching</strong> and more!</p>
                 </article>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <div id="marketing">
-        <section>
-            <div>
-                <article>
-                    <img src="/img/tools3.svg" />
-                    <p>Learn how to configure what you need - from webservers, to users, deployment, process monitors and more!</p>
-                </article>
-                <article>
-                    <img src="/img/download24.svg" />
-                    <p>Learn how to install and configure the software you need to run modern web applications.</p>
-                </article>
-                <article>
-                    <img src="/img/shield65.svg" />
-                    <p>Learn the basics (and more!) on how to secure your server, from user setup, to firewalls to monitoring!</p>
-                </article>
-                <article>
-                    <img src="/img/slideshows.svg" />
-                    <p>Learn how to make servers play together in multi-server environments, including employing load balancers.</p>
-                </article>
+    <section class="dark" id="aboutme">
+        <div class="breadth">
+            <article>
+                <img src="/img/fideloper.png" alt="fideloper" width="90" height="90" />
+                <p>I'm Chris Fidao. I write <a href="http://serversforhackers.com" target="_blank">Servers for Hackers</a>, the newsletter read by over 6000 programmers who want to learn about the servers their applications run on.</p>
+                <p>I code software at UserScape, write about software at <a href="http://fideloper.com" target="_blank">fideloper.com</a> and write about servers at <a href="http://serversforhackers.com" target="_blank">serversforhackers.com</a>. Find me on twitter <a href="https://twitter.com/fideloper">@fideloper</a>.</p>
+            </article>
+        </div>
+    </section>
+
+<!-- Congratulations on viewing the source and seeing pricing information ahead of time!
+    <section class="basic" id="price-header">
+        <div class="breadth">
+            <article>
+                <h2>Pricing</h2>
+            </article>
+        </div>
+        <div class="dark">
+            <div class="breadth">
+                <header class="book left">
+                    <h3>Just the Book</h3>
+                </header>
+                <div class="inside-price">
+                    <a href="#" class="book button">Buy Now, $39.99</a>
+                    <hr />
+                    <p>12 Chapters, 160+ Page PDF</p>
+                </div>
+                <header class="bookplus right">
+                    <h3>Book + Case Studies</h3>
+                </header>
+                <div class="inside-price">
+                    <a href="#" class="bookplus button">Buy Now, $49.99</a>
+                    <hr />
+                    <p>12 Chapters, 160+ Page PDF</p>
+                    <p>4 Case Studies with Specific and Full Setup Examples</p>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <div class="buy_now">
-        <section>
-            <div>
-                <article>
-                    <a href="#">Buy Now</a>
-                </article>
-            </div>
-        </section>
-    </div>
-
-    <div id="social">
-        <section>
-            <div>
-                <article>
+    <section id="price">
+        <div class="breadth">
+            <article class="left">
+                <a href="#" class="book button">Buy Now, $39.99</a>
+                <hr />
+                <p>12 Chapters, 160+ Page PDF</p>
+            </article>
+            <article class="right">
+                <a href="#" class="bookplus button">Buy Now, $49.99</a>
+                <hr />
+                <p>12 Chapters, 160+ Page PDF</p>
+                <p>4 Case Studies with Specific and Full Setup Examples</p>
+            </article>
+        </div>
+    </section>
+-->
+    <section class="basic" id="signup">
+        <div class="breadth">
+            <article>
+                <h2>Stay Informed!</h2>
+                <p>Signup for the <a href="http://serversforhackers.com">Servers for Hackers</a> newsletter to stay informed of book updates and to<br />receive free Server information in the bi-weekly editions!</p>
+                <form action="http://serversforhackers.us3.list-manage.com/subscribe/post?u=a8135265ae1b33559181e2f60&amp;id=5b5ccc2ff7" method="post" _lpchecked="1">
+                    <p>See <a href="/editions">past editions</a> and Signup to receive regular newsletters:</p>
                     <ul>
-                        <li><a href="https://twitter.com/fideloper"><i class="entypo-social twitter"></i> @fideloper</a></li>
-                        <li><a href="http://serversforhackers.com">ServersForHackers</a></li>
+                        <li><input type="email" name="EMAIL" placeholder="Email Address" class="txt" value=""></li>
+                        <li><button type="submit" class="button submit bookplus">Subscribe</button></li>
                     </ul>
-                </article>
-            </div>
-        </section>
-    </div>
+                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_a8135265ae1b33559181e2f60_5b5ccc2ff7" value=""></div>
+                    <input type="hidden" name="MMERGE3" value="ebook" />
+                </form>
+            </article>
+        </div>
+    </section>
 
 
 <!--
