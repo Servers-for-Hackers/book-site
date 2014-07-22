@@ -67,8 +67,7 @@ a, a:visited {
   text-decoration: none;
 }
 
-header h1,
-header h2 {
+header h1  {
   color: $sfh-white;
   font-weight: 700;
   font-size: em(36);
@@ -79,7 +78,7 @@ header h2 {
   @include media($tablet) {
     font-size: em(50);
     letter-spacing: em(1);
-    bottom: -15px;
+    bottom: -16px;
   }
 
   @include media($desktop) {

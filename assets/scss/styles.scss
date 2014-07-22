@@ -51,15 +51,16 @@ hr {
 }
 
 #content p {
-  @include pad();
+  //@include pad();
 }
 
 .grp {
   @include row();
+  @include pad();
 }
 
 .breadth .block {
-  @include pad();
+  //@include pad();
   @include span-columns(12);
 
   @include media($tablet) {
@@ -76,6 +77,10 @@ hr {
 #aboutme img {
   float: left;
   margin: 30px;
+}
+
+#aboutme p {
+  padding-left: 150px;
 }
 
 .book {
