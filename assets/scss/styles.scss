@@ -20,7 +20,8 @@ hr {
   background: $sfh-black;
 }
 
-.breadth {
+.breadth,
+.dual {
   @include outer-container;
   max-width: 960px;
 }
@@ -30,6 +31,10 @@ hr {
   @include span-columns(12);
   padding: 0;
   text-align: center;
+}
+
+.dual article {
+  @include span-columns(6);
 }
 
 #icon img {

@@ -149,12 +149,14 @@ header h1  {
   text-align: center;
 }
 
-.button {
+.button,
+a.button {
   color: $sfh-black;
   font-size: em(30);
 }
 
-.button:hover {
+.button:hover,
+a.button:hover {
   background: $sfh-black;
   color: $sfh-white;
 }
