@@ -33,26 +33,41 @@ hr {
   text-align: center;
 }
 
+.breadth #biglogo {
+  @include span-columns(12);
+
+  @include media($tablet) {
+    width: 60%;
+    margin: 0;
+  }
+}
+
+.breadth #callouts {
+  @include span-columns(12);
+
+  @include media($tablet) {
+    width: 40%;
+  }
+}
+
+
+
+.breadth article p {
+  text-align: center;
+  padding: 0 10px;
+}
+
 .dual article {
   @include span-columns(6);
 }
 
-#icon img {
-  margin: em(40) 0;
-  height: auto;
-
-  @include media($tablet) {
-    margin: em(60) 0;
-  }
-
-  @include media($desktop) {
-    margin: em(80) 0;
-  }
+#icon article {
+  padding: 50px 0;
 }
 
 #icon img {
-  width: 80%;
-  max-width: 427px;
+  height: auto;
+  max-width: 350px;
 }
 
 #content p {
@@ -96,6 +111,10 @@ hr {
   background: $sfh-red;
 }
 
+.bookwhite {
+  background: #eeeeef;
+}
+
 .button {
   border-radius: 3px;
   display: block;
@@ -131,8 +150,8 @@ hr {
 
   @include media($tablet) {
     header {
+      width: 33%;
       float: left;
-      width: 50%;
       padding: 0;
       margin-bottom: 0;
     }
@@ -140,16 +159,15 @@ hr {
 
   @include media($desktop) {
     header {
-      width: 37.5%;
-      margin: 0 38px;
+      margin: 0;
     }
 
     header.left {
-      margin-left: 80px;
+      margin-left: 0;
     }
 
     header.right {
-      margin-right: 80px;
+      margin-right: 0;
     }
   }
 }
@@ -162,23 +180,23 @@ hr {
 
     article {
       float: left;
-      width: 50%;
+      width: 33%;
       margin: 0;
     }
   }
 
   @include media($desktop) {
     article {
-      width: 37.5%;
-      margin: 0 38px;
+      width: 33%;
+      margin: 0;
     }
 
     article.left {
-      margin-left: 80px;
+      margin-left: 0;
     }
 
     article.right {
-      margin-right: 80px;
+      margin-right: 0;
     }
   }
 }

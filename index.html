@@ -42,9 +42,12 @@
 
     <section id="icon">
         <div class="breadth">
-            <article>
-                <p>( the eBook )</p>
+            <article id="biglogo">
                 <img src="/img/icon.png" alt="Servers for Hackers" width="427" height="398" />
+            </article>
+            <article id="callouts">
+                <h2>The eBook</h2>
+                <p><a class="button bookplus" href="#buynow">Buy Now!</a></p>
             </article>
         </div>
     </section>
@@ -57,24 +60,7 @@
         </div>
     </section>
 
-    <section class="basic" id="signup">
-        <div class="breadth">
-            <article>
-                <h2>Sign up for updates!</h2>
-                <p>Signup for the <a href="https://serversforhackers.com">Servers for Hackers</a> newsletter to stay informed of <strong>book updates</strong> and to<br />receive <strong>free server information</strong> in the bi-weekly editions!</p>
-                <form action="https://serversforhackers.us3.list-manage.com/subscribe/post?u=a8135265ae1b33559181e2f60&amp;id=5b5ccc2ff7" method="post" _lpchecked="1">
-                    <ul>
-                        <li><input type="email" name="EMAIL" placeholder="Email Address" class="txt" value=""></li>
-                        <li><button type="submit" class="button submit bookplus">Subscribe</button></li>
-                    </ul>
-                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_a8135265ae1b33559181e2f60_5b5ccc2ff7" value=""></div>
-                    <input type="hidden" name="MMERGE3" value="ebook" />
-                </form>
-            </article>
-        </div>
-    </section>
-
-    <section class="dark basic" id="content">
+    <section class="basic" id="content">
         <div class="breadth">
             <article>
                 <h2>Don't catch Accidental Sysadmin Syndrome™</h2>
@@ -112,9 +98,10 @@
                     <p>This includes preventing unauthorized access, managing permissions and users, learning how to use the <strong>iptables firewall</strong>, configuring SSH, enabling SSL certificates and more!</p>
                 </article>
                 <article class="block">
-                    <h3>Case Studies</h3>
+                    <h3>Case Studies + Videos</h3>
                     <p>Read the case studies to learn from specific <strong>examples</strong> from real-world usage.</p>
                     <p>These includes examples of <strong>load balancing</strong>, web server configuration, <strong>caching</strong> and more!</p>
+                    <p>Watch <strong>videos</strong> on Vagrant, SSL Certificates, Ansible and Supervisord.</p>
                 </article>
             </div>
         </div>
@@ -124,7 +111,7 @@
         <div class="breadth">
             <article>
                 <img src="/img/fideloper.png" alt="fideloper" width="90" height="90" />
-                <p>I'm Chris Fidao. I write <a href="https://serversforhackers.com" target="_blank">Servers for Hackers</a>, the newsletter read by over <strong>6500</strong> programmers who want to learn about the servers their applications run on.</p>
+                <p>I'm Chris Fidao. I write <a href="https://serversforhackers.com" target="_blank">Servers for Hackers</a>, the newsletter read by over <strong>6600</strong> programmers who want to learn about the servers their applications run on.</p>
                 <p>I code software at <a href="http://userscape.com" target="_blank">UserScape</a>, write about software at <a href="http://fideloper.com" target="_blank">fideloper.com</a> and write about servers at <a href="https://serversforhackers.com" target="_blank">serversforhackers.com</a>. Find me on twitter <a href="https://twitter.com/fideloper">@fideloper</a>.</p>
             </article>
         </div>
@@ -153,31 +140,42 @@
             </article>
         </div>
     </section>
-<!--
+
     <section class="basic" id="price-header">
         <div class="breadth">
             <article>
+                <a name="buynow" id="buynow"></a>
                 <h2>Get it now!</h2>
             </article>
         </div>
         <div class="dark">
             <div class="breadth">
                 <header class="book left">
-                    <h3>The Book</h3>
+                    <h3>The<br>Book™</h3>
                 </header>
                 <div class="inside-price">
-                    <a href="#" class="book button">Buy Now, $34.99</a>
+                    <a href="#" class="book button">Buy Now $34.99</a>
                     <hr />
-                    <p>35+ Chapters, 280+ Page PDF</p>
+                    <p>35+ Chapters, 300+ Page PDF</p>
                 </div>
-                <header class="bookplus right">
-                    <h3>Book + Case Studies</h3>
+                <header class="bookwhite right">
+                    <h3>The Book +<br>Case Studies</h3>
                 </header>
                 <div class="inside-price">
-                    <a href="#" class="bookplus button">Buy Now, $44.99</a>
+                    <a href="#" class="bookwhite button">Buy Now $44.99</a>
                     <hr />
-                    <p>35+ Chapters, 280+ Page PDF</p>
-                    <p>4 Case Studies with Specific and Full Setup Examples</p>
+                    <p>35+ Chapters, 300+ Page PDF</p>
+                    <p>5 Case Studies with Specific and Full Setup Examples</p>
+                </div>
+                <header class="bookplus left">
+                    <h3>The Book, CS +<br> Videos</h3>
+                </header>
+                <div class="inside-price">
+                    <a href="#" class="bookplus button">Buy Now $64.99</a>
+                    <hr />
+                    <p>35+ Chapters, 300+ Page PDF</p>
+                    <p>5 Case Studies with Specific and Full Setup Examples</p>
+                    <p>Videos tutorials on Ansible, SSL Certificates, Vagrant, and Supervisord</p>
                 </div>
             </div>
         </div>
@@ -186,19 +184,26 @@
     <section id="price">
         <div class="breadth">
             <article class="left">
-                <a href="#" class="book button">Buy Now, $34.99</a>
+                <a href="#" class="book button">Buy Now $34.99</a>
                 <hr />
-                <p>35+ Chapters, 280+ Page PDF</p>
+                <p>35+ Chapters, 300+ Page PDF</p>
             </article>
             <article class="right">
-                <a href="#" class="bookplus button">Buy Now, $44.99</a>
+                <a href="#" class="bookwhite button">Buy Now $44.99</a>
                 <hr />
-                <p>35+ Chapters, 280+ Page PDF</p>
-                <p>4 Case Studies with Specific and Full Setup Examples</p>
+                <p>35+ Chapters, 300+ Page PDF</p>
+                <p>5 Case Studies with Specific and Full Setup Examples</p>
+            </article>
+            <article class="right">
+                <a href="#" class="bookplus button">Buy Now $64.99</a>
+                <hr />
+                <p>35+ Chapters, 300+ Page PDF</p>
+                <p>5 Case Studies with Specific and Full Setup Examples</p>
+                <p>Videos tutorials on Ansible, SSL Certificates, Vagrant, and Supervisord</p>
             </article>
         </div>
     </section>
--->
+
     <section class="basic" id="signup">
         <div class="breadth">
             <article>
