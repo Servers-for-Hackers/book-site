@@ -111,6 +111,12 @@ header h1  {
   margin: 60px 0 20px 0;
 }
 
+p.small {
+  margin: 0;
+  padding: 0;
+  font-size: em(12);
+}
+
 #aboutme p {
   font-weight: 300;
 }
@@ -160,6 +166,11 @@ header h1  {
 a.button {
   color: $sfh-black;
   font-size: em(30);
+}
+
+.minor_button .button,
+.minor_button a.button {
+  font-size: em(16);
 }
 
 .button:hover,
