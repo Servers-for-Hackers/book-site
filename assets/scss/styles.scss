@@ -223,3 +223,13 @@ input.txt {
   color: $sfh-black;
   outline: none;
 }
+
+.sm_divider {
+  @include outer-container;
+
+  div {
+    @include span-columns(12);
+    height: 40px;
+    background: $sfh-white;
+  }
+}
