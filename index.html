@@ -194,15 +194,58 @@
         <div class="breadth">
             <article><a name="dlpreview" id="dlpreview"></a>
                 <h2>Download the Preview!</h2>
-                <p><strong>Signup to get a preview of the book!</strong><br />The <a href="https://serversforhackers.com">Servers for Hackers</a> newsletter will keep you informed of <strong>book updates</strong>. You'll also receive <strong>free server information</strong> in the bi-weekly editions!</p>
-                <form action="https://serversforhackers.us3.list-manage.com/subscribe/post?u=a8135265ae1b33559181e2f60&amp;id=97fb1293da" method="post" _lpchecked="1">
-                    <ul>
-                        <li><input type="email" name="EMAIL" placeholder="Email Address" class="txt" value=""></li>
-                        <li><button type="submit" class="button submit bookplus">Subscribe</button></li>
-                    </ul>
-                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_a8135265ae1b33559181e2f60_97fb1293da" value=""></div>
-                    <input type="hidden" name="MMERGE3" value="ebook" />
-                </form>
+
+
+                <script src="https://app.convertkit.com/assets/CKJS4.js?v=16"></script>
+
+                <div class="ck_form">
+                    <div class="ck_form_content">
+                        <div class="ck_description">
+        <span class="ck_image">
+          <img alt="Icon_new_trans" src="http://s3.amazonaws.com/convertkit/subscription_forms/images/004/812/613/standard/icon_new_trans.png?1418527289" />
+        </span>
+                            <p><p><strong>Signup to get preview chapters of the book!</strong><br>You'll receive a preview immediately. You'll also receive just a few emails with some powerful information on Nginx and related topics!</p></p>
+                        </div>
+                    </div>
+
+
+                    <div class="ck_form_fields">
+
+                        <div id='ck_success_msg'  style='display:none;'>
+                            <p>Thanks for your interest in Servers for Hackers!
+
+                                You&#x27;ll receive an email shortly with a link to the preview chapters of the Servers for Hackers eBook.
+
+                                You&#x27;ll also receive just a few extra emails which will show you some more tips and information - the kind of information you&#x27;ll find in the eBook.
+
+                                I hope you find it useful!</p>
+                        </div>
+
+                        <!--  Form starts here  -->
+                        <form id="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/1031/subscribe" data-remote="true">
+                            <input type="hidden" value="{&quot;embed_style&quot;:&quot;inline&quot;,&quot;embed_trigger&quot;:&quot;scroll_percentage&quot;,&quot;scroll_percentage&quot;:&quot;70&quot;,&quot;delay_seconds&quot;:&quot;10&quot;,&quot;display_position&quot;:&quot;br&quot;,&quot;display_devices&quot;:&quot;all&quot;,&quot;days_no_show&quot;:&quot;15&quot;}" id="ck_form_options"></input>
+                            <input type="hidden" name="id" value="1031" id="landing_page_id" />
+                            <p class="ck_errorArea"></p>
+                            <div class="ck_control_group">
+                                <label class="ck_label" for="ck_firstNameField">First Name</label>
+                                <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" required />
+                            </div>
+                            <div class="ck_control_group">
+                                <label class="ck_label" for="ck_emailField">Email Address</label>
+                                <input type="email" name="email" class="ck_email_address" id="ck_emailField" required />
+                            </div>
+                            <label class="ck_checkbox" style="display:none;">
+                                <input class="optIn ck_course_opted" name='course_opted' type="checkbox" id="optIn" checked />
+                                <span class='ck_opt_in_prompt'>I'd like to receive a free 30 day course by email.</span>
+                            </label>
+
+                            <button class="subscribe_button ck_subscribe_button btn fields" id="ck_subscribe_button">
+                                Send Me Previews!
+                            </button>
+                            <span class="ck_guarantee">We won&#x27;t send you spam. Unsubscribe at any time.</span>
+                        </form>
+                    </div>
+                </div>
             </article>
         </div>
     </section>
